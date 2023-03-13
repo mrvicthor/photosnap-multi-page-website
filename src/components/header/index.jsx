@@ -10,9 +10,12 @@ const Header = () => {
 
   return (
     <header className="relative">
-      {showMenu ? (
-        <div className="h-[37.1875rem] absolute bg-[#000000] left-0 right-0 opacity-50 top-[72px] z-10" />
-      ) : null}
+      {showMenu && (
+        <div
+          onClick={() => setShowMenu(false)}
+          className="h-[37.1875rem] absolute bg-[#000000] left-0 right-0 opacity-50 top-[72px] z-10"
+        />
+      )}
       <nav className="flex justify-between items-center px-6 py-[1.75rem] md:px-[2.5rem] lg:mx-auto lg:max-w-[69.375rem]">
         <div>
           <Link to="/">
