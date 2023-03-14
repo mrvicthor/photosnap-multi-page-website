@@ -41,7 +41,7 @@
 
   .mobile-nav[data-visible="true"] {
     transform: translateY(0px);
-    transition: transform 0.5s ease-in-out;
+    /* transition: transform 0.5s ease-in-out; */
   }
 
   @media (48em <= width) {
