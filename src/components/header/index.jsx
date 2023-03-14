@@ -25,7 +25,7 @@ const Header = () => {
         <div
           id="mobile-nav"
           data-visible={showMenu ? true : false}
-          className="mobile-nav absolute top-[71px] px-8 py-8 bg-[#ffffff] left-0 right-0 flex flex-col items-center gap-[1.25rem] h-[15.8125rem] z-10 md:static md:h-4 md:top-0 md:py-0 md:flex-row md:px-0 md:gap-[2.3125rem]"
+          className="mobile-nav px-8 py-8 bg-[#ffffff] left-0 right-0 flex flex-col items-center gap-[1.25rem] h-[15.8125rem] z-10 md:static md:h-4 md:top-0 md:py-0 md:flex-row md:px-0 md:gap-[2.3125rem]"
         >
           <NavLink
             onClick={() => setShowMenu(false)}

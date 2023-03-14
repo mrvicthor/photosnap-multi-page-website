@@ -36,6 +36,8 @@
 
   .mobile-nav {
     transform: translateY(-340px);
+    position: fixed;
+    inset: 71px 0 0 0;
     transition: transform 500ms ease-in-out 200ms;
   }
 
