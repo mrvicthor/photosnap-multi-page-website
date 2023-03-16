@@ -5,6 +5,7 @@ import { Banner } from "../../components";
 const Home = () => {
   return (
     <>
+      {/* <img src={bgDesktop} alt="desktop" /> */}
       <Banner
         bgImage={bannerImage}
         title="create and share your photo stories."
