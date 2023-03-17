@@ -128,5 +128,18 @@
     .story {
       grid-template-rows: 31.25rem;
     }
+
+    .story--block:hover {
+      border-bottom: 4px solid transparent;
+      border-image: linear-gradient(
+        26.57deg,
+        #ffc593 0%,
+        #bc7198 43.29%,
+        #5a77ff 83.33%
+      );
+      border-image-slice: 1;
+      transform: translateY(-25px);
+      transition: transform 500ms ease-in-out;
+    }
   }
 }
