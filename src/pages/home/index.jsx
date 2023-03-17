@@ -1,11 +1,10 @@
 import bannerImage from "../../assets/home/mobile/create-and-share.jpg";
 import bgTablet from "../../assets/home/tablet/create-and-share.jpg";
 import bgDesktop from "../../assets/home/desktop/create-and-share.jpg";
-import { Banner } from "../../components";
+import { Banner, Services } from "../../components";
 const Home = () => {
   return (
     <>
-      {/* <img src={bgDesktop} alt="desktop" /> */}
       <Banner
         bgImage={bannerImage}
         title="create and share your photo stories."
@@ -15,6 +14,7 @@ const Home = () => {
         bgTablet={bgTablet}
         bgDesktop={bgDesktop}
       />
+      <Services />
     </>
   );
 };

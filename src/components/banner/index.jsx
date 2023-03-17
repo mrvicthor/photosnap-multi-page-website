@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Arrow from "../../assets/shared/desktop/arrow.svg";
 import { useWindowSize } from "../../hooks/use-Window-Size";
+import LinkButton from "../common/linkbutton";
 
-const Banner = ({ bgImage, bgTablet, bgDesktop, title, content, btnText }) => {
+const Banner = ({ bgImage, bgTablet, bgDesktop, title, content }) => {
   const { width } = useWindowSize();
   return (
     <section>
@@ -33,19 +34,18 @@ const Banner = ({ bgImage, bgTablet, bgDesktop, title, content, btnText }) => {
               {content}
             </p>
           </article>
-          <Link
-            to="/"
-            className="flex items-center gap-x-[1.125rem] mt-[1.4375rem]"
-          >
-            <div className="text-[0.75rem] leading-[15.62px] font-bold uppercase">
-              {btnText}
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+          <LinkButton btnText="get an invite">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="43"
+              height="14"
+              className="group-hover:animate-ping"
+            >
               <g fill="none" fillRule="evenodd" stroke="#ffffff">
                 <path d="M0 7h41.864M35.428 1l6 6-6 6" />
               </g>
             </svg>
-          </Link>
+          </LinkButton>
         </div>
       </div>
     </section>
