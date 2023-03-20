@@ -70,6 +70,37 @@
     );
   }
 
+  .footer--socials-facebook svg,
+  .footer--socials-twitter svg,
+  .footer--socials-youtube svg,
+  .footer--socials-instagram svg,
+  .footer--socials-pinterest svg {
+    fill: #ffffff;
+    cursor: pointer;
+  }
+
+  .footer--socials-facebook svg:hover {
+    fill: url(#a);
+    cursor: pointer;
+  }
+
+  .footer--socials-twitter svg:hover {
+    fill: url(#c);
+    cursor: pointer;
+  }
+  .footer--socials-youtube svg:hover {
+    fill: url(#b);
+    cursor: pointer;
+  }
+
+  .footer--socials-instagram svg:hover {
+    cursor: pointer;
+    fill: url(#e);
+  }
+  .footer--socials-pinterest svg:hover {
+    fill: url(#d);
+    cursor: pointer;
+  }
   @media (48em <= width) {
     .layout {
       grid-template-rows: 72px 1fr 284px;
