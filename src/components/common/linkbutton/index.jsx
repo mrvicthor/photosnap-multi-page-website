@@ -5,8 +5,8 @@ const LinkButton = ({ children, btnText, style }) => {
     <Link
       to="/"
       className={`flex items-center gap-x-[1.125rem] ${
-        style ? style : "mt-[1.4375rem]"
-      } md:mt-12 group`}
+        style ? style : "mt-[1.4375rem] md:mt-12"
+      }  group`}
     >
       <div className="text-[0.75rem] leading-[15.62px] font-bold uppercase hover:border-b hover:border-[#000000]">
         {btnText}

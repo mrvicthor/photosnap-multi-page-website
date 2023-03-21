@@ -126,6 +126,10 @@
     .story {
       grid-template-rows: 31.25rem 31.25rem;
     }
+
+    .footer--block {
+      grid-template-rows: 16px 16px 1fr;
+    }
   }
 
   @media (64rem <= width) {
@@ -163,6 +167,10 @@
 
     .features {
       grid-template-columns: 21.875rem 21.875rem 21.875rem;
+    }
+
+    .footer--block {
+      grid-template-columns: 1fr 4fr 1fr;
     }
   }
 }

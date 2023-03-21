@@ -53,7 +53,7 @@ const Home = () => {
           bgDesktop={architectureDesktopBg}
         />
       </section>
-      <section className="features py-[5rem] pl-[2.0625rem] pr-8 space-y-[3.5rem] md:py-[7.5rem] md:px-[9.6875rem] overflow-hidden  lg:grid lg:space-y-0 lg:gap-x-[1.875rem]">
+      <section className="features py-[5rem] pl-[2.0625rem] pr-8 space-y-[3.5rem] md:py-[7.5rem] md:px-[9.6875rem] lg:grid lg:space-y-0 lg:gap-x-[1.875rem] lg:max-w-[69rem] lg:mx-auto lg:px-0">
         <Feature
           imagePath={responsiveIcon}
           title="100% Responsive"

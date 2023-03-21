@@ -16,7 +16,7 @@ const Header = () => {
           className="h-[37.1875rem] absolute bg-[#000000] left-0 right-0 opacity-50 top-[72px] z-10 transition duration-500 ease-in-out"
         />
       )}
-      <nav className="flex h-full justify-between items-center px-6 py-[1.75rem] md:px-[2.5rem] lg:mx-auto lg:max-w-[72rem]">
+      <nav className="flex h-full justify-between items-center px-6 py-[1.75rem] md:px-[2.5rem] lg:mx-auto lg:max-w-[69rem]">
         <div>
           <Link to="/">
             <img src={Logo} alt="logo" />
