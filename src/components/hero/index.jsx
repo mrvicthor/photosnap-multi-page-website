@@ -13,7 +13,7 @@ const Hero = ({
 }) => {
   const { width } = useWindowSize();
   return (
-    <div>
+    <div className="md:h-[40.625rem] md:relative">
       {width !== undefined && (
         <img
           src={
@@ -27,11 +27,11 @@ const Hero = ({
           className="object-cover w-full h-full"
         />
       )}
-      <article className="bg-[#000000] text-[#ffffff] py-12 pl-[1.8125rem] pr-[1.75rem]">
+      <article className="bg-[#000000] text-[#ffffff] py-12 pl-[1.8125rem] pr-[1.75rem] md:absolute md:top-[7.625rem] md:bg-transparent md:py-0 md:w-[24.1875rem] lg:left-[4.9375rem]">
         <h1 className="font-bold text-[0.75rem] tracking-[2px] leading-[15.62px] uppercase">
           {title}
         </h1>
-        <h2 className="mt-4 text-[2rem] font-bold leading-[2.5rem] tracking-[3.33px] uppercase w-[19.875rem]">
+        <h2 className="mt-4 text-[2rem] font-bold leading-[2.5rem] tracking-[3.33px] uppercase w-[19.875rem] md:mt-6 md:text-[2.5rem] leading-[3rem] md:tracking-[4.17px]">
           {subtitle}
         </h2>
         <p className="mt-4 font-normal text-[0.8125rem] leading-[16.93px]">

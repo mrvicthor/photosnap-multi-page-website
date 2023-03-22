@@ -30,25 +30,25 @@ const Home = () => {
       <section className="grid md:grid-cols-2 story lg:grid-cols-4">
         <Story
           imagePath={storyMountainBg}
-          title="the mountains"
+          title="The Mountains"
           author="by John Appleseed"
           bgDesktop={storyMountainDesktopBg}
         />
         <Story
           imagePath={cityScapesBg}
-          title="sunset cityscapes"
+          title="Sunset Cityscapes"
           author="by Benjamin Cruz"
           bgDesktop={cityScapesDesktopBg}
         />
         <Story
           imagePath={voyageBg}
-          title="18 days voyage"
+          title="18 Days Voyage"
           author="by Alexei Borodin"
           bgDesktop={voyageDesktopBg}
         />
         <Story
           imagePath={architectureBg}
-          title="architecturals"
+          title="Architecturals"
           author="by Samantha Brooke"
           bgDesktop={architectureDesktopBg}
         />

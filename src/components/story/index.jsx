@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useWindowSize } from "../../hooks/use-Window-Size";
 
-const Story = ({ title, author, imagePath, bgDesktop }) => {
+const Story = ({ title, author, imagePath, bgDesktop, dateCreated }) => {
   const { width } = useWindowSize();
   return (
     <div className="story--block h-[23.4375rem] relative text-[#ffffff] md:h-full cursor-pointer">
@@ -15,7 +15,12 @@ const Story = ({ title, author, imagePath, bgDesktop }) => {
       <div className="story--block-overlay absolute left-0 h-[23.4375rem] top-0 right-0 md:h-full" />
       <div className="absolute left-[2.0625rem] right-8 bottom-[2.5rem]">
         <article className="space-y-1">
-          <h3 className="text-[1.125rem] font-bold capitalize leading-[1.5625rem]">
+          {dateCreated && (
+            <p className="font-normal text-[0.8125rem] leading-[16.93px]">
+              {dateCreated}
+            </p>
+          )}
+          <h3 className="text-[1.125rem] font-bold leading-[1.5625rem]">
             {title}
           </h3>
           <p className="text-[0.8125rem] font-normal leading-[16.93px]">

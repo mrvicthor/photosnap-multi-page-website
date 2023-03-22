@@ -124,9 +124,12 @@
     }
 
     .story {
-      grid-template-rows: 31.25rem 31.25rem;
+      grid-template-rows: repeat(2, 31.25rem);
     }
 
+    .story-page {
+      grid-template-rows: repeat(8, 31.25rem);
+    }
     .footer--block {
       grid-template-rows: 16px 16px 1fr;
     }
@@ -150,6 +153,9 @@
     }
     .story {
       grid-template-rows: 31.25rem;
+    }
+    .story-page {
+      grid-template-rows: repeat(4, 31.25rem);
     }
 
     .story--block:hover {
