@@ -6,5 +6,16 @@ import Service from "./service";
 import Services from "./services";
 import Story from "./story";
 import Feature from "./feature";
+import Hero from "./hero";
 
-export { Layout, Header, Button, Banner, Service, Services, Story, Feature };
+export {
+  Layout,
+  Header,
+  Button,
+  Banner,
+  Service,
+  Services,
+  Story,
+  Feature,
+  Hero,
+};
