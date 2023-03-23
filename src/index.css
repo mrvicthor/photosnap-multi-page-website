@@ -47,7 +47,7 @@
   }
 
   .banner {
-    grid-template-rows: 18.375rem 26.1875rem;
+    /* grid-template-rows: 18.375rem 26.1875rem; */
   }
   .line {
     background: linear-gradient(
@@ -113,6 +113,10 @@
       grid-template-columns: 1fr 17.0625rem;
       grid-template-rows: 650px;
     }
+    .shared-layout {
+      grid-template-columns: 1fr 17.0625rem;
+      grid-template-rows: 490px;
+    }
     .services--box {
       grid-template-columns: 17.0625rem 1fr;
       grid-template-rows: 600px;
@@ -144,6 +148,9 @@
       grid-template-columns: 38.125rem 1fr;
     }
 
+    .shared-layout {
+      grid-template-columns: 38.125rem 1fr;
+    }
     .services--box {
       grid-template-columns: 1fr 38.125rem;
     }

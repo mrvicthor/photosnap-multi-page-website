@@ -18,7 +18,7 @@ const Header = () => {
       )}
       <nav className="flex h-full justify-between items-center px-6 py-[1.75rem] md:px-[2.5rem] lg:mx-auto lg:max-w-[69rem]">
         <div>
-          <Link to="/">
+          <Link onClick={() => setShowMenu(false)} to="/">
             <img src={Logo} alt="logo" />
           </Link>
         </div>
@@ -46,7 +46,7 @@ const Header = () => {
             to="/prices"
             className="font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
           >
-            prices
+            pricing
           </NavLink>
           <hr className="bg-[#000000] h-[1px] opacity-25 w-full md:hidden" />
 
