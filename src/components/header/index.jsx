@@ -43,7 +43,7 @@ const Header = () => {
           </NavLink>
           <NavLink
             onClick={() => setShowMenu(false)}
-            to="/prices"
+            to="/pricing"
             className="font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
           >
             pricing

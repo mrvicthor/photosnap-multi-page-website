@@ -1,8 +1,8 @@
-const Feature = ({ imagePath, title, description, padding }) => {
+const Feature = ({ imagePath, title, description, padding, notHome }) => {
   return (
     <div
-      className={`${
-        padding ? "lg:pt-[2.3rem]" : ""
+      className={`${padding ? "lg:pt-[2.3rem]" : ""} ${
+        notHome ? "md:pt-[2.3rem]" : ""
       } flex flex-col items-center space-y-12 text-[#000000]`}
     >
       <img src={imagePath} alt={title} className="" />

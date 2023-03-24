@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import Arrow from "../../assets/shared/desktop/arrow.svg";
 import { useWindowSize } from "../../hooks/use-Window-Size";
 import LinkButton from "../common/linkbutton";
 

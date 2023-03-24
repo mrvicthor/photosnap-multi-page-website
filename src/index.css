@@ -134,6 +134,12 @@
     .story-page {
       grid-template-rows: repeat(8, 31.25rem);
     }
+
+    .features--block {
+      grid-template-columns: repeat(2, 21.1875rem);
+      grid-template-rows: repeat(3, 13.265rem);
+    }
+
     .footer--block {
       grid-template-rows: 16px 16px 1fr;
     }
@@ -180,6 +186,11 @@
 
     .features {
       grid-template-columns: 21.875rem 21.875rem 21.875rem;
+    }
+
+    .features--block {
+      grid-template-columns: repeat(3, 21.875rem);
+      grid-template-rows: repeat(2, 13.265rem);
     }
 
     .footer--block {
