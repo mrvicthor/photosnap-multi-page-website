@@ -101,6 +101,15 @@
     fill: url(#d);
     cursor: pointer;
   }
+
+  .price--line {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
   @media (48em <= width) {
     .layout {
       grid-template-rows: 72px 1fr 284px;

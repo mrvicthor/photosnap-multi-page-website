@@ -7,6 +7,7 @@ import Services from "./services";
 import Story from "./story";
 import Feature from "./feature";
 import Hero from "./hero";
+import Lists from "./lists";
 
 export {
   Layout,
@@ -18,4 +19,5 @@ export {
   Story,
   Feature,
   Hero,
+  Lists,
 };
