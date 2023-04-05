@@ -149,6 +149,14 @@
       grid-template-rows: repeat(3, 13.265rem);
     }
 
+    .pricing-subscription {
+    }
+
+    .pricing-subscription-item {
+      display: grid;
+      grid-template-columns: 16.875rem 1fr;
+      grid-template-rows: 7.375rem 2.5rem;
+    }
     .footer--block {
       grid-template-rows: 16px 16px 1fr;
     }

@@ -105,7 +105,7 @@ const Pricing = () => {
             Yearly
           </p>
         </div>
-        <div className="mt-[2.5rem] space-y-6">
+        <div className="mt-[2.5rem] space-y-6 md:px-[2.5rem] pricing-subscription">
           <Lists
             title="basic"
             content="Includes basic usage of our platform. Recommended for new and aspiring photographers."
