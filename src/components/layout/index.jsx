@@ -1,6 +1,6 @@
 import { Header } from "../index";
 import LinkButton from "../common/linkbutton";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Layout = ({ children }) => {
   return (
@@ -139,30 +139,46 @@ const Layout = ({ children }) => {
               </a>
             </div>
             <div className="mt-[3.0625rem] flex flex-col items-center gap-y-[1.1875rem] md:flex-row md:gap-x-[1.625rem] md:row-start-2 md:col-start-1 md:col-end-2 md:mt-0  lg:row-start-1 lg:row-end-4 lg:w-full lg:col-start-2 lg:flex-col lg:gap-y-[1.1875rem] lg:items-start lg:col-end-6">
-              <Link
+              <NavLink
                 to="/"
-                className="block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                className={({ isActive }) =>
+                  isActive
+                    ? "opacity-50 block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                    : "block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                }
               >
                 home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/stories"
-                className="block font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                className={({ isActive }) =>
+                  isActive
+                    ? "opacity-50 block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                    : "block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                }
               >
                 stories
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/features"
-                className="block font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                className={({ isActive }) =>
+                  isActive
+                    ? "opacity-50 block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                    : "block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                }
               >
                 features
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/pricing"
-                className="block font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                className={({ isActive }) =>
+                  isActive
+                    ? "opacity-50 block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                    : "block  font-bold text-[0.75rem] leading-[15.62px] tracking-[2px] uppercase cursor-pointer hover:text-[#dfdfdf]"
+                }
               >
                 pricing
-              </Link>
+              </NavLink>
             </div>
 
             <LinkButton

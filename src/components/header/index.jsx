@@ -30,21 +30,33 @@ const Header = () => {
           <NavLink
             onClick={() => setShowMenu(false)}
             to="/stories"
-            className="font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#dfdfdf] font-bold text-[0.9375rem] leading-[19.53px] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+                : "font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+            }
           >
             stories
           </NavLink>
           <NavLink
             onClick={() => setShowMenu(false)}
             to="/features"
-            className="font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#dfdfdf] font-bold text-[0.9375rem] leading-[19.53px] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+                : "font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+            }
           >
             features
           </NavLink>
           <NavLink
             onClick={() => setShowMenu(false)}
             to="/pricing"
-            className="font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+            className={({ isActive }) =>
+              isActive
+                ? "text-[#dfdfdf] font-bold text-[0.9375rem] leading-[19.53px] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+                : "font-bold text-[0.9375rem] leading-[19.53px] text-[#000000] tracking-[2.5px] uppercase hover:text-[#dfdfdf] md:text-[0.75rem]"
+            }
           >
             pricing
           </NavLink>
