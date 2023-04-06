@@ -28,6 +28,61 @@ const Pricing = () => {
         content="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."
         notHome
       />
+      <section className="py-16 px-[1.75rem] bg-white md:py-[7rem] lg:py-[7.5rem]">
+        <div className="flex justify-center gap-x-8 items-center text-[#000000]">
+          <p
+            className={`${
+              yearlySub ? "opacity-50" : "opacity-100"
+            } text-[1.125rem] font-bold leading-[1.5625rem]`}
+          >
+            Monthly
+          </p>
+          <div
+            className={`${
+              yearlySub
+                ? "bg-[#000000] justify-end "
+                : "bg-[#DFDFDF] justify-start"
+            } flex items-center px-1 rounded-full w-16 h-8 cursor-pointer`}
+            onClick={() => setYearlySub(!yearlySub)}
+          >
+            <motion.div
+              className={`w-[1.5rem] h-[1.5rem] ${
+                yearlySub ? "bg-white" : "bg-[#000000]"
+              } rounded-full `}
+              layout
+              transition={spring}
+            />
+          </div>
+          <p
+            className={`${
+              yearlySub ? "opacity-100" : "opacity-50"
+            } text-[1.125rem] font-bold leading-[1.5625rem]`}
+          >
+            Yearly
+          </p>
+        </div>
+        <div className="mt-[2.5rem] space-y-6 md:px-[2.5rem] pricing-subscription lg:space-y-0">
+          <Lists
+            title="basic"
+            content="Includes basic usage of our platform. Recommended for new and aspiring photographers."
+            price={yearlySub ? 19 * 10 : 19}
+            period={yearlySub ? "per year" : "per month"}
+          />
+          <Lists
+            title="pro"
+            content="More advanced features available. Recommended for photography veterans and professionals."
+            price={yearlySub ? 39 * 10 : 39}
+            period={yearlySub ? "per year" : "per month"}
+            bgColor
+          />
+          <Lists
+            title="business"
+            content="Additional features available such as more detailed metrics. Recommended for business owners."
+            price={yearlySub ? 99 * 10 : 99}
+            period={yearlySub ? "per year" : "per month"}
+          />
+        </div>
+      </section>
       <section className="text-[#ffffff] h-[18rem] relative overflow-hidden md:h-[17.5rem]">
         {width !== undefined && (
           <img
@@ -70,61 +125,6 @@ const Pricing = () => {
               </LinkButton>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="py-16 px-[1.75rem] bg-white">
-        <div className="flex justify-center gap-x-8 items-center text-[#000000]">
-          <p
-            className={`${
-              yearlySub ? "opacity-50" : "opacity-100"
-            } text-[1.125rem] font-bold leading-[1.5625rem]`}
-          >
-            Monthly
-          </p>
-          <div
-            className={`${
-              yearlySub
-                ? "bg-[#000000] justify-end "
-                : "bg-[#DFDFDF] justify-start"
-            } flex items-center px-1 rounded-full w-16 h-8 `}
-            onClick={() => setYearlySub(!yearlySub)}
-          >
-            <motion.div
-              className={`w-[1.5rem] h-[1.5rem] ${
-                yearlySub ? "bg-white" : "bg-[#000000]"
-              } rounded-full `}
-              layout
-              transition={spring}
-            />
-          </div>
-          <p
-            className={`${
-              yearlySub ? "opacity-100" : "opacity-50"
-            } text-[1.125rem] font-bold leading-[1.5625rem]`}
-          >
-            Yearly
-          </p>
-        </div>
-        <div className="mt-[2.5rem] space-y-6 md:px-[2.5rem] pricing-subscription">
-          <Lists
-            title="basic"
-            content="Includes basic usage of our platform. Recommended for new and aspiring photographers."
-            price={yearlySub ? 19 * 10 : 19}
-            period={yearlySub ? "per year" : "per month"}
-          />
-          <Lists
-            title="pro"
-            content="More advanced features available. Recommended for photography veterans and professionals."
-            price={yearlySub ? 39 * 10 : 39}
-            period={yearlySub ? "per year" : "per month"}
-            bgColor
-          />
-          <Lists
-            title="business"
-            content="Additional features available such as more detailed metrics. Recommended for business owners."
-            price={yearlySub ? 99 * 10 : 99}
-            period={yearlySub ? "per year" : "per month"}
-          />
         </div>
       </section>
     </>
