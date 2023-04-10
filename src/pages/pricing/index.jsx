@@ -1,4 +1,4 @@
-import { Banner, Lists } from "../../components";
+import { Banner, Lists, FeatureList, FeatureListItem } from "../../components";
 import LinkButton from "../../components/common/linkbutton";
 import { useWindowSize } from "../../hooks/use-Window-Size";
 import betaBg from "../../assets/shared/mobile/bg-beta.jpg";
@@ -81,6 +81,55 @@ const Pricing = () => {
             price={yearlySub ? 99 * 10 : 99}
             period={yearlySub ? "per year" : "per month"}
           />
+        </div>
+      </section>
+      <section className="text-[#000000] px-[1.75rem] pb-[4.03125rem]">
+        <h4 className="hidden">Compare</h4>
+        <div>
+          <h5 className="font-bold text-[0.75rem] uppercase leading-[15.62px] tracking-[2px]">
+            The Features
+          </h5>
+          <hr className="my-[1.4375rem] bg-[#000000]" />
+          <FeatureList title="unlimited story posting">
+            <FeatureListItem title="Basic" isHidden />
+            <FeatureListItem title="Pro" isHidden />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="unlimited photo upload">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" isHidden />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="embedding custom content">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" isHidden />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="customize metadata">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" isHidden />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="advanced metrics">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="photo downloads">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="search engine indexing">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
+          <FeatureList title="search engine indexing">
+            <FeatureListItem title="Basic" />
+            <FeatureListItem title="Pro" />
+            <FeatureListItem title="Business" isHidden />
+          </FeatureList>
         </div>
       </section>
       <section className="text-[#ffffff] h-[18rem] relative overflow-hidden md:h-[17.5rem]">

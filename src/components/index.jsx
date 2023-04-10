@@ -8,6 +8,8 @@ import Story from "./story";
 import Feature from "./feature";
 import Hero from "./hero";
 import Lists from "./lists";
+import FeatureList from "./featureList";
+import FeatureListItem from "./featureListItems";
 
 export {
   Layout,
@@ -20,4 +22,6 @@ export {
   Feature,
   Hero,
   Lists,
+  FeatureList,
+  FeatureListItem,
 };
