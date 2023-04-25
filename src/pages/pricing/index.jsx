@@ -1,4 +1,10 @@
-import { Banner, Lists, FeatureList, FeatureListItem } from "../../components";
+import {
+  Banner,
+  Lists,
+  FeatureList,
+  FeatureListItem,
+  Table,
+} from "../../components";
 import LinkButton from "../../components/common/linkbutton";
 import { useWindowSize } from "../../hooks/use-Window-Size";
 import betaBg from "../../assets/shared/mobile/bg-beta.jpg";
@@ -83,9 +89,11 @@ const Pricing = () => {
           />
         </div>
       </section>
-      <section className="text-[#000000] px-[1.75rem] pb-[4.03125rem]">
-        <h4 className="hidden">Compare</h4>
-        <div>
+      <section className="text-[#000000] px-[1.75rem] pb-[4.03125rem] md:pb-[7rem] md:flex md:justify-center md:flex-col md:items-center lg:pb-[10rem]">
+        <h4 className="hidden md:block font-bold text-[2.5rem] uppercase leading-[3rem] tracking-[4.17px]">
+          Compare
+        </h4>
+        <div className="md:hidden">
           <h5 className="font-bold text-[0.75rem] uppercase leading-[15.62px] tracking-[2px]">
             The Features
           </h5>
@@ -131,6 +139,7 @@ const Pricing = () => {
             <FeatureListItem title="Business" isHidden />
           </FeatureList>
         </div>
+        <Table />
       </section>
       <section className="text-[#ffffff] h-[18rem] relative overflow-hidden md:h-[17.5rem]">
         {width !== undefined && (

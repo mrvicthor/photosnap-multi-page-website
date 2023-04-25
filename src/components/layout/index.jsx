@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <div className="grid layout">
       <Header />
       <main className="main">{children}</main>
-      <footer className="footer bg-[#000000] text-[#ffffff]">
+      <footer className="footer bg-[#000000] text-[#ffffff] -mt-1">
         <div className="py-[3.5rem] pl-[2.0625rem] pr-8 md:py-16 md:px-[2.4375rem] lg:max-w-[69rem] lg:mx-auto lg:py-[4rem]">
           <div className="footer--block grid justify-items-center md:grid-cols-2 md:justify-items-start md:gap-y-8 lg:gap-x-[6.8125rem]">
             <Link to="/" className="">

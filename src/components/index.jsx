@@ -10,6 +10,7 @@ import Hero from "./hero";
 import Lists from "./lists";
 import FeatureList from "./featureList";
 import FeatureListItem from "./featureListItems";
+import Table from "./table";
 
 export {
   Layout,
@@ -24,4 +25,5 @@ export {
   Lists,
   FeatureList,
   FeatureListItem,
+  Table,
 };

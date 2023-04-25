@@ -154,6 +154,38 @@
       grid-template-columns: 16.875rem 1fr;
       grid-template-rows: 7.375rem 2.5rem;
     }
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+
+    tr th,
+    tr td {
+      font-size: 0.75rem;
+      line-height: 15.62px;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    th {
+      text-align: center;
+      padding-bottom: 1.4375rem;
+      border-bottom: 1px solid #000000;
+    }
+    th,
+    td {
+      padding-inline: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    td {
+      padding-block: 1.4375rem;
+      border-bottom: 1px solid #dfdfdf;
+      vertical-align: middle;
+      position: relative;
+    }
+
     .footer--block {
       grid-template-rows: 16px 16px 1fr;
     }
