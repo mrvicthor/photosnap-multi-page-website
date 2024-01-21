@@ -7,6 +7,14 @@ import { NavLink, Link } from "react-router-dom";
 import { Button } from "../index";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const handleShowMenu = () => {
+    if (showMenu) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+    setShowMenu(!showMenu);
+  };
 
   return (
     <header className="relative bg-[#ffffff]">
@@ -66,7 +74,7 @@ const Header = () => {
         </div>
         <Button spacing />
         <div
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={handleShowMenu}
           aria-controls="mobile-nav"
           className="md:hidden"
         >
