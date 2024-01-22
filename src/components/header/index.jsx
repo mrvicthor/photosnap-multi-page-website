@@ -16,17 +16,23 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
 
+  const preventScroll = () => {
+    console.log("triger");
+    document.body.style.overflow = "auto";
+    setShowMenu(false);
+  };
+
   return (
     <header className="relative bg-[#ffffff]">
       {showMenu && (
         <div
-          onClick={() => setShowMenu(false)}
+          onClick={preventScroll}
           className="h-[37.1875rem] absolute bg-[#000000] left-0 right-0 opacity-50 top-[72px] z-10 transition duration-500 ease-in-out"
         />
       )}
       <nav className="flex h-full justify-between items-center px-6 py-[1.75rem] md:px-[2.5rem] lg:mx-auto lg:max-w-[69rem]">
         <div>
-          <Link onClick={() => setShowMenu(false)} to="/">
+          <Link onClick={preventScroll} to="/">
             <img src={Logo} alt="logo" />
           </Link>
         </div>
@@ -36,7 +42,7 @@ const Header = () => {
           className="mobile-nav px-8 py-8 bg-[#ffffff] left-0 right-0 flex flex-col items-center gap-[1.25rem] h-[15.8125rem] z-10 md:static md:h-4 md:top-0 md:py-0 md:flex-row md:px-0 md:gap-[2.3125rem]"
         >
           <NavLink
-            onClick={() => setShowMenu(false)}
+            onClick={preventScroll}
             to="/stories"
             className={({ isActive }) =>
               isActive
@@ -47,7 +53,7 @@ const Header = () => {
             stories
           </NavLink>
           <NavLink
-            onClick={() => setShowMenu(false)}
+            onClick={preventScroll}
             to="/features"
             className={({ isActive }) =>
               isActive
@@ -58,7 +64,7 @@ const Header = () => {
             features
           </NavLink>
           <NavLink
-            onClick={() => setShowMenu(false)}
+            onClick={preventScroll}
             to="/pricing"
             className={({ isActive }) =>
               isActive
