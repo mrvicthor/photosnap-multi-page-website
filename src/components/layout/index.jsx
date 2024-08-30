@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
                 href="https://www.facebook.com/outtaspace1/"
                 target="_blank"
                 className="footer--socials-facebook"
+                aria-label="find me on facebook"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                   <defs>
@@ -58,6 +59,7 @@ const Layout = ({ children }) => {
                 href="https://github.com/mrvicthor"
                 target="_blank"
                 className="footer--socials-youtube"
+                aria-label="find me on github"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
                   <defs>
@@ -77,6 +79,7 @@ const Layout = ({ children }) => {
                 href="https://twitter.com/eva_skillz"
                 target="_blank"
                 className="footer--socials-twitter"
+                aria-label="find me on twitter"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
                   <defs>
@@ -102,6 +105,7 @@ const Layout = ({ children }) => {
                 href="https://github.com/mrvicthor"
                 target="_blank"
                 className="footer--socials-pinterest"
+                aria-label="find me on github"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                   <defs>
@@ -121,6 +125,7 @@ const Layout = ({ children }) => {
                 href="https://www.instagram.com/mrvic_thor/"
                 target="_blank"
                 className="footer--socials-instagram"
+                aria-label="find me on instagram"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
                   <defs>
